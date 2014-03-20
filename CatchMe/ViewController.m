@@ -14,16 +14,32 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
+@synthesize usernameTextField;
+@synthesize passwordTextField;
+@synthesize logInButton;
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [textField resignFirstResponder];
+    return YES;
 }
 
-- (void)didReceiveMemoryWarning
+-(IBAction) clickedBackground
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
+
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    //Assign textfield delegates to self
+    usernameTextField.delegate = self;
+    passwordTextField.delegate = self;
+    
+    //Set text fields to return when Done is pressed
+    usernameTextField.returnKeyType = UIReturnKeyDone;
+    passwordTextField.returnKeyType = UIReturnKeyDone;
+}
+
 
 @end
