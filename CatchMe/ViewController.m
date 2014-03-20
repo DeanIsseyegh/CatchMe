@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MainMenuViewController.h"
 
 @interface ViewController ()
 
@@ -41,5 +42,13 @@
     passwordTextField.returnKeyType = UIReturnKeyDone;
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"Go To Main Menu"]){
+        if ([segue.destinationViewController isKindOfClass:[MainMenuViewController class]]){
+            MainMenuViewController *mainMenuVC = (MainMenuViewController *)segue.destinationViewController;
+        }
+    }
+}
 
 @end
