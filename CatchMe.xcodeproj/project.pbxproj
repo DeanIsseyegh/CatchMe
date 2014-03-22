@@ -21,6 +21,7 @@
 		65A4749318DB916500B4DC1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A4747518DB916400B4DC1F /* UIKit.framework */; };
 		65A4749B18DB916500B4DC1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65A4749918DB916500B4DC1F /* InfoPlist.strings */; };
 		65A4749D18DB916500B4DC1F /* CatchMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A4749C18DB916500B4DC1F /* CatchMeTests.m */; };
+		65A474B418DBA0BF00B4DC1F /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A474B318DBA0BF00B4DC1F /* MainMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		65A4749818DB916500B4DC1F /* CatchMeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatchMeTests-Info.plist"; sourceTree = "<group>"; };
 		65A4749A18DB916500B4DC1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65A4749C18DB916500B4DC1F /* CatchMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatchMeTests.m; sourceTree = "<group>"; };
+		65A474B218DBA0BF00B4DC1F /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		65A474B318DBA0BF00B4DC1F /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +115,10 @@
 		65A4747718DB916400B4DC1F /* CatchMe */ = {
 			isa = PBXGroup;
 			children = (
+				65A474A618DB925400B4DC1F /* Model */,
 				65A4748018DB916400B4DC1F /* AppDelegate.h */,
+				65A474B218DBA0BF00B4DC1F /* MainMenuViewController.h */,
+				65A474B318DBA0BF00B4DC1F /* MainMenuViewController.m */,
 				65A4748118DB916400B4DC1F /* AppDelegate.m */,
 				65A4748318DB916400B4DC1F /* Main.storyboard */,
 				65A4748618DB916400B4DC1F /* ViewController.h */,
@@ -150,6 +156,13 @@
 				65A4749918DB916500B4DC1F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65A474A618DB925400B4DC1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A474B418DBA0BF00B4DC1F /* MainMenuViewController.m in Sources */,
 				65A4748818DB916400B4DC1F /* ViewController.m in Sources */,
 				65A4748218DB916400B4DC1F /* AppDelegate.m in Sources */,
 				65A4747E18DB916400B4DC1F /* main.m in Sources */,
@@ -378,6 +392,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CatchMe/CatchMe-Prefix.pch";
 				INFOPLIST_FILE = "CatchMe/CatchMe-Info.plist";
@@ -391,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CatchMe/CatchMe-Prefix.pch";
 				INFOPLIST_FILE = "CatchMe/CatchMe-Info.plist";
@@ -460,6 +476,7 @@
 				65A474A218DB916500B4DC1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65A474A318DB916500B4DC1F /* Build configuration list for PBXNativeTarget "CatchMeTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +485,7 @@
 				65A474A518DB916500B4DC1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
