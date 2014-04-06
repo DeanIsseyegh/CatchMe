@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MainMenuViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *CatchMeButton;
+@property (strong, nonatomic)NSString *longitude;
+@property (strong, nonatomic)NSString *latitude;
 
 @end

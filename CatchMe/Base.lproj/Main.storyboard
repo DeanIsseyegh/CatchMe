@@ -111,9 +111,12 @@
                                 <state key="normal" title="Catch Me!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="CatchMeOnClick:" destination="dpe-6D-IMJ" eventType="touchUpInside" id="Cm1-ef-vz5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search for nearby 'Catch Me' requests" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOv-j1-GHq">
-                                <rect key="frame" x="66" y="479" width="223" height="21"/>
+                                <rect key="frame" x="49" y="474" width="223" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -123,6 +126,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Catch Me If You Can" id="iZb-vT-Ypl"/>
+                    <connections>
+                        <outlet property="CatchMeButton" destination="7VM-1a-lz0" id="rhD-N2-k6k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="801-TX-Npa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
