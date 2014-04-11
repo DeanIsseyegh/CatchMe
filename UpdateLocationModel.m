@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 Dean. All rights reserved.
 //
 
-#import "TestModel.h"
+#import "UpdateLocationModel.h"
 
 //http://127.0.0.1:3000
 //http://vast-beyond-6485.herokuapp.com
 
-@implementation TestModel
+@implementation UpdateLocationModel
 
 - (void)sendLocation:(NSString*)latitude :(NSString*)longitude
 {

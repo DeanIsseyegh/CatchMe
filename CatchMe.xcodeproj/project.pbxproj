@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6510520918E0A41A00A0DFA0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6510520818E0A41A00A0DFA0 /* CoreData.framework */; };
 		6510520B18E0A43100A0DFA0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6510520A18E0A43100A0DFA0 /* MapKit.framework */; };
-		6510520E18E0DD7B00A0DFA0 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510520D18E0DD7B00A0DFA0 /* TestModel.m */; };
+		6510520E18E0DD7B00A0DFA0 /* UpdateLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510520D18E0DD7B00A0DFA0 /* UpdateLocationModel.m */; };
 		6510523518EB3BDC00A0DFA0 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510521118EB3BDC00A0DFA0 /* AFHTTPRequestOperation.m */; };
 		6510523618EB3BDC00A0DFA0 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510521318EB3BDC00A0DFA0 /* AFHTTPRequestOperationManager.m */; };
 		6510523718EB3BDC00A0DFA0 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510521518EB3BDC00A0DFA0 /* AFHTTPSessionManager.m */; };
@@ -28,6 +28,10 @@
 		6510524418EB3BDC00A0DFA0 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510523218EB3BDC00A0DFA0 /* UIRefreshControl+AFNetworking.m */; };
 		6510524518EB3BDC00A0DFA0 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510523418EB3BDC00A0DFA0 /* UIWebView+AFNetworking.m */; };
 		6510524718EB3CE500A0DFA0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6510524618EB3CE500A0DFA0 /* CoreLocation.framework */; };
+		6521A6E918F203DF00747B6C /* RegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6521A6E818F203DF00747B6C /* RegisterModel.m */; };
+		65260D5018F5F2A5001D189E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65260D4F18F5F2A5001D189E /* CoreImage.framework */; };
+		65260D5218F5F2AE001D189E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65260D5118F5F2AE001D189E /* QuartzCore.framework */; };
+		65260D5518F6085B001D189E /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65260D5418F6085B001D189E /* LoginModel.m */; };
 		6555D51C18EB4391001F8A75 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6555D51B18EB4391001F8A75 /* Security.framework */; };
 		6555D51E18EB439D001F8A75 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6555D51D18EB439D001F8A75 /* MobileCoreServices.framework */; };
 		6555D52018EB43B9001F8A75 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6555D51F18EB43B9001F8A75 /* SystemConfiguration.framework */; };
@@ -44,8 +48,9 @@
 		65A4749218DB916400B4DC1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A4747118DB916400B4DC1F /* Foundation.framework */; };
 		65A4749318DB916500B4DC1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A4747518DB916400B4DC1F /* UIKit.framework */; };
 		65A4749B18DB916500B4DC1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65A4749918DB916500B4DC1F /* InfoPlist.strings */; };
-		65A4749D18DB916500B4DC1F /* CatchMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A4749C18DB916500B4DC1F /* CatchMeTests.m */; };
+		65A4749D18DB916500B4DC1F /* RegisterModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A4749C18DB916500B4DC1F /* RegisterModelTests.m */; };
 		65A474B418DBA0BF00B4DC1F /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A474B318DBA0BF00B4DC1F /* MainMenuViewController.m */; };
+		65B9624A18F1E27B00377E3D /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B9624918F1E27B00377E3D /* RegisterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +66,8 @@
 /* Begin PBXFileReference section */
 		6510520818E0A41A00A0DFA0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		6510520A18E0A43100A0DFA0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		6510520C18E0DD7B00A0DFA0 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = SOURCE_ROOT; };
-		6510520D18E0DD7B00A0DFA0 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = SOURCE_ROOT; };
+		6510520C18E0DD7B00A0DFA0 /* UpdateLocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateLocationModel.h; sourceTree = SOURCE_ROOT; };
+		6510520D18E0DD7B00A0DFA0 /* UpdateLocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateLocationModel.m; sourceTree = SOURCE_ROOT; };
 		6510521018EB3BDC00A0DFA0 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		6510521118EB3BDC00A0DFA0 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		6510521218EB3BDC00A0DFA0 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -100,6 +105,12 @@
 		6510523318EB3BDC00A0DFA0 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		6510523418EB3BDC00A0DFA0 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		6510524618EB3CE500A0DFA0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6521A6E718F203DF00747B6C /* RegisterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterModel.h; sourceTree = SOURCE_ROOT; };
+		6521A6E818F203DF00747B6C /* RegisterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterModel.m; sourceTree = SOURCE_ROOT; };
+		65260D4F18F5F2A5001D189E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		65260D5118F5F2AE001D189E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		65260D5318F6085B001D189E /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = SOURCE_ROOT; };
+		65260D5418F6085B001D189E /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = SOURCE_ROOT; };
 		6555D51B18EB4391001F8A75 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6555D51D18EB439D001F8A75 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		6555D51F18EB43B9001F8A75 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -121,9 +132,11 @@
 		65A4749018DB916400B4DC1F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		65A4749818DB916500B4DC1F /* CatchMeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatchMeTests-Info.plist"; sourceTree = "<group>"; };
 		65A4749A18DB916500B4DC1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		65A4749C18DB916500B4DC1F /* CatchMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatchMeTests.m; sourceTree = "<group>"; };
+		65A4749C18DB916500B4DC1F /* RegisterModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterModelTests.m; sourceTree = "<group>"; };
 		65A474B218DBA0BF00B4DC1F /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		65A474B318DBA0BF00B4DC1F /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		65B9624818F1E27B00377E3D /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		65B9624918F1E27B00377E3D /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +144,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65260D5218F5F2AE001D189E /* QuartzCore.framework in Frameworks */,
+				65260D5018F5F2A5001D189E /* CoreImage.framework in Frameworks */,
 				6555D52018EB43B9001F8A75 /* SystemConfiguration.framework in Frameworks */,
 				6555D51E18EB439D001F8A75 /* MobileCoreServices.framework in Frameworks */,
 				6555D51C18EB4391001F8A75 /* Security.framework in Frameworks */,
@@ -230,6 +245,8 @@
 		65A4747018DB916400B4DC1F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65260D5118F5F2AE001D189E /* QuartzCore.framework */,
+				65260D4F18F5F2A5001D189E /* CoreImage.framework */,
 				6555D51F18EB43B9001F8A75 /* SystemConfiguration.framework */,
 				6555D51D18EB439D001F8A75 /* MobileCoreServices.framework */,
 				6555D51B18EB4391001F8A75 /* Security.framework */,
@@ -257,6 +274,8 @@
 				65A4748718DB916400B4DC1F /* ViewController.m */,
 				65A4748918DB916400B4DC1F /* Images.xcassets */,
 				65A4747818DB916400B4DC1F /* Supporting Files */,
+				65B9624818F1E27B00377E3D /* RegisterViewController.h */,
+				65B9624918F1E27B00377E3D /* RegisterViewController.m */,
 			);
 			path = CatchMe;
 			sourceTree = "<group>";
@@ -275,7 +294,7 @@
 		65A4749618DB916500B4DC1F /* CatchMeTests */ = {
 			isa = PBXGroup;
 			children = (
-				65A4749C18DB916500B4DC1F /* CatchMeTests.m */,
+				65A4749C18DB916500B4DC1F /* RegisterModelTests.m */,
 				65A4749718DB916500B4DC1F /* Supporting Files */,
 			);
 			path = CatchMeTests;
@@ -293,8 +312,12 @@
 		65A474A618DB925400B4DC1F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6510520C18E0DD7B00A0DFA0 /* TestModel.h */,
-				6510520D18E0DD7B00A0DFA0 /* TestModel.m */,
+				6510520C18E0DD7B00A0DFA0 /* UpdateLocationModel.h */,
+				6510520D18E0DD7B00A0DFA0 /* UpdateLocationModel.m */,
+				6521A6E718F203DF00747B6C /* RegisterModel.h */,
+				6521A6E818F203DF00747B6C /* RegisterModel.m */,
+				65260D5318F6085B001D189E /* LoginModel.h */,
+				65260D5418F6085B001D189E /* LoginModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -396,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6521A6E918F203DF00747B6C /* RegisterModel.m in Sources */,
 				6510523A18EB3BDC00A0DFA0 /* AFURLConnectionOperation.m in Sources */,
 				6510523518EB3BDC00A0DFA0 /* AFHTTPRequestOperation.m in Sources */,
 				6510524118EB3BDC00A0DFA0 /* UIButton+AFNetworking.m in Sources */,
@@ -406,7 +430,8 @@
 				65A474B418DBA0BF00B4DC1F /* MainMenuViewController.m in Sources */,
 				6510524418EB3BDC00A0DFA0 /* UIRefreshControl+AFNetworking.m in Sources */,
 				6510523C18EB3BDC00A0DFA0 /* AFURLResponseSerialization.m in Sources */,
-				6510520E18E0DD7B00A0DFA0 /* TestModel.m in Sources */,
+				6510520E18E0DD7B00A0DFA0 /* UpdateLocationModel.m in Sources */,
+				65B9624A18F1E27B00377E3D /* RegisterViewController.m in Sources */,
 				6510524218EB3BDC00A0DFA0 /* UIImageView+AFNetworking.m in Sources */,
 				65A4748818DB916400B4DC1F /* ViewController.m in Sources */,
 				6510524018EB3BDC00A0DFA0 /* UIAlertView+AFNetworking.m in Sources */,
@@ -418,6 +443,7 @@
 				6510523718EB3BDC00A0DFA0 /* AFHTTPSessionManager.m in Sources */,
 				6510523F18EB3BDC00A0DFA0 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				6510523E18EB3BDC00A0DFA0 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				65260D5518F6085B001D189E /* LoginModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65A4749D18DB916500B4DC1F /* CatchMeTests.m in Sources */,
+				65A4749D18DB916500B4DC1F /* RegisterModelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

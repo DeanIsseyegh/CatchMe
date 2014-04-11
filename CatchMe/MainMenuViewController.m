@@ -7,7 +7,7 @@
 //
 
 #import "MainMenuViewController.h"
-#import "TestModel.h"
+#import "UpdateLocationModel.h"
 
 @interface MainMenuViewController () <CLLocationManagerDelegate>
 
@@ -46,8 +46,8 @@
         NSLog(@"Wait: coordinates not retrieved");
     else
     {
-        TestModel *testModel = [[TestModel alloc] init];
-        [testModel sendLocation:self.latitude :self.longitude];
+        UpdateLocationModel *updateModel = [[UpdateLocationModel alloc] init];
+        [updateModel sendLocation:self.latitude :self.longitude];
     }
 }
 

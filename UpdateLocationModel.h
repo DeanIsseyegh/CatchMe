@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TestModel : NSObject
+@interface UpdateLocationModel : NSObject
 
 -(void)sendLocation:(NSString*)latitude :(NSString*)longitude;
 
